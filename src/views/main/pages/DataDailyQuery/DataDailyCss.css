@@ -1,0 +1,121 @@
+@media screen and (min-width: 705px) {
+    #Menu {
+        height: 55px;
+        overflow: auto;
+        font-size: 1.5ex;
+        width: 98%;
+        margin: 5px 1% 0 0;
+    }
+
+    :deep(.Chart) {
+        width: 96%;
+        height: 480px;
+        margin: 0 auto;
+        margin: 0 0 2% 2%;
+        background-color: #fff;
+    }
+
+    .select {
+        margin-left: 1%;
+        line-height: 35px;
+        text-align: left;
+        display: flex;
+    }
+
+    .el-select {
+        width: 16%;
+        margin: 0% 1%;
+        margin: 0.2% 1% 0 0;
+    }
+
+    .el-button {
+        width: 10%;
+        margin: 0 0 0 1.5%;
+        font-size: 1.5ex;
+    }
+
+    :deep(.el-input__icon) {
+        height: 37px;
+    }
+
+    :deep(.el-range-separator) {
+        line-height: 26px;
+    }
+
+    :deep(.el-input__inner) {
+        height: 36px;
+        font-size: 1.5ex;
+    }
+
+    :deep(.el-date-editor) {
+        width: 41%;
+        margin: 0.25%;
+    }
+
+    :deep(.el-range-input) {
+        font-size: 1.5ex;
+    }
+
+    :deep(.el-range-input) {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    #Menu {
+        height: 50px;
+        overflow: auto;
+        font-size: 1.2ex;
+        width: 98%;
+        margin: 10px 1%;
+    }
+
+    :deep(.Chart) {
+        width: 96%;
+        height: 380px;
+        margin: 0 auto;
+        margin: 10px;
+    }
+
+    .select {
+        margin-left: 1%;
+        line-height: 20px;
+        text-align: left;
+        display: flex;
+    }
+
+    .el-select {
+        width: 10%;
+        margin: 0% 0 0 1%;
+    }
+
+    .el-button {
+        width: 10%;
+        margin: 0 1.5%;
+    }
+
+    :deep(.el-input__icon) {
+        height: 30px;
+    }
+
+    :deep(.el-range-separator) {
+        line-height: 20px;
+    }
+
+    :deep(.el-input__inner) {
+        height: 30px;
+    }
+
+    :deep(.el-date-editor) {
+        width: 36%;
+        margin: 0.25%;
+    }
+
+    :deep(.el-range-input) {
+        font-size: 1.2ex;
+    }
+
+    :deep(.el-range-input) {
+        width: 50%;
+    }
+}

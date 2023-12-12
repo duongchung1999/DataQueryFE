@@ -1,0 +1,44 @@
+/*  设置表格False记录背景色为红色*/
+:deep(.el-table .warning-row) {
+    color: rgb(255, 255, 255);
+    background: #ac3d3d;
+}
+
+/*  设置选中时的背景色和文字颜色*/
+:deep(.el-table tbody tr:hover>td) {
+    color: #000;
+    background-color: rgb(169, 212, 255)
+}
+
+/*  设置表格单元格内边距*/
+:deep(.el-table--border td) {
+    padding: 6px 0;
+}
+
+:deep(.is-leaf) {
+    padding: 6px 0;
+}
+
+/* 设置表格内容字体颜色和大小*/
+:deep(.el-table) {
+    color: #000;
+    font-size: 1.5ex;
+}
+
+/*  设置表格行最小高度*/
+:deep(.el-table__empty-block) {
+    min-height: 36px;
+}
+
+/*  设置表格文字居中，超出部分隐藏*/
+:deep(.cell) {
+    text-align: center;
+    white-space: nowrap;
+}
+:deep(.Chart) {
+    width: 96%;
+    height: 350px;
+    margin: 0 auto;
+    margin: 5px 0 0 2%;
+    background-color: #fff;
+}

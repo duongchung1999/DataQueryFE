@@ -1,0 +1,229 @@
+
+
+/* 设置滚动条的宽度*/
+:deep(.el-table__body-wrapper::-webkit-scrollbar) {
+    width: 10px;
+    /* 横向滚动条*/
+    height: 8px;
+    /* 纵向滚动条 必写*/
+}
+
+/*  设置滚动条的背景色和圆角*/
+:deep(.el-table__body-wrapper::-webkit-scrollbar-thumb) {
+    background-color: pink;
+    border-radius: 10px;
+}
+
+/*  设置表格False记录背景色为红色*/
+:deep(.el-table .warning-row) {
+    color: rgb(255, 255, 255);
+    background: #ac3d3d;
+}
+
+/*  设置选中时的背景色和文字颜色*/
+:deep(.el-table tbody tr:hover>td) {
+    color: #000;
+    background-color: rgb(169, 212, 255)
+}
+
+/*  设置表格单元格内边距*/
+:deep(.el-table--border td) {
+    padding: 6px 0;
+}
+
+:deep(.is-leaf) {
+    padding: 6px 0;
+}
+
+/* 设置表格内容字体颜色和大小*/
+:deep(.el-table) {
+    color: #000;
+    font-size: 1.5ex;
+}
+
+/*  设置表格行最小高度*/
+:deep(.el-table__empty-block) {
+    min-height: 36px;
+}
+
+/*  设置表格文字居中，超出部分隐藏*/
+:deep(.cell) {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*  设置分页边距*/
+:deep(.el-pagination) {
+    margin: 2px 0;
+}
+
+:deep(el-pagination__sizes) {
+    float: left;
+}
+
+:deep(.Chart) {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 1%;
+  }
+  
+:deep(.el-range-input) {
+    width: 50%;
+}
+
+:deep(#MoHu) {
+    height: 36px;
+    font-size: 1.5ex;
+}
+/* 修改时间选择文字位置 */
+:deep(.el-range-separator) {
+    margin-top: 3px !important;
+}
+
+/* 屏幕大于650px */
+@media screen and (min-width: 650px) {
+    #Menu {
+        height: 172px;
+        overflow: auto;
+    }
+
+    #Data {
+        width: 98%;
+        margin: 0 1% 0 1%;
+    }
+
+    .select {
+        margin-left: 1%;
+        line-height: 35px;
+        text-align: left;
+        display: flex;
+    }
+
+    :deep(.el-input__inner) {
+        font-size: 1.5ex;
+        height: 28px;
+    }
+
+    .el-select {
+        width: 24%;
+        margin: 0.2% 1% 0 0;
+        line-height: 28px;
+    }
+
+    .el-input {
+        width: 98%;
+        margin: 0.2% 1% 0;
+        font-size: 1.5ex;
+        line-height: 28px;
+    }
+
+    :deep(.el-select .el-input__suffix) {
+        top: -6px;
+    }
+
+    .el-button {
+        font-size: 1.5ex;
+        width: 12%;
+        float: right;
+        margin: 0.2% 1% 0;
+        min-height: 30px;
+        padding: 7px 15px;
+    }
+
+    /*  设置时间选择样式*/
+    :deep(.demonstration) {
+        float: left;
+        font-size: 1.5ex;
+        margin: 0.7% 1%;
+    }
+
+    :deep(.el-date-editor) {
+        float: left;
+        width: 44%;
+        height: 30px;
+        margin: 0.2% 0.2% 0;
+
+    }
+
+    :deep(.el-range-separator) {
+        font-size: 1.5ex;
+        text-align: center;
+        margin-top: 9px;
+        line-height: 20px;
+    }
+
+    :deep(.el-range-input) {
+        font-size: 1.5ex;
+        text-align: center;
+    }
+}
+
+/* 屏幕小于650px */
+@media screen and (max-width: 650px) {
+    #Menu {
+        height: 170px;
+        overflow: auto;
+    }
+
+    #Data {
+        width: 98%;
+        height: 78%;
+        margin: 5px 1% 0 1%;
+    }
+
+    :deep(.el-input__inner) {
+        font-size: 1.2ex;
+        height: 24px;
+    }
+
+    :deep(.el-button) {
+        font-size: 1.2ex;
+        height: 24px;
+    }
+
+    .select {
+        margin-left: 1%;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .el-select {
+        width: 23%;
+        margin: 1% 0.5% 0 0.5%;
+    }
+
+    .el-input {
+        width: 98%;
+        margin: 1% 0.5% 0 0.5%;
+    }
+
+    .el-button {
+        width: 14%;
+        float: right;
+        margin: 0.25%;
+    }
+
+    /*  设置时间选择样式*/
+    :deep(.demonstration) {
+        float: left;
+        margin: 10px 1%;
+    }
+
+    :deep(.el-date-editor) {
+        float: left;
+        width: 36%;
+        height: 30px;
+        margin: 0.5%;
+    }
+
+    :deep(.el-range-separator) {
+        font-size: 1.2ex;
+        text-align: center;
+    }
+
+    :deep(.el-range-input) {
+        font-size: 1.2ex;
+        text-align: center;
+    }
+}
