@@ -17,7 +17,7 @@ export default {
     DuplicateRemovalPrompt:'Loại bỏ SN lặp lại',
     WorkordersPrompt:'Đơn đặt hàng',
     CustomQueryPrompt:'Truy vấn tùy chỉnh',
-    SNQueryPrompt:'SN Truy vấn',
+    SNQueryPrompt:'Truy vấn SN',
     IncludePrompt:'Mục kiểm tra chứa truy vấn',
     Query:'Yêu cầu',
     ClearPage:'Xóa trang',

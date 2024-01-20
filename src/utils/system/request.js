@@ -36,22 +36,22 @@ service.interceptors.response.use(
       if (response.status != 200) {
         switch (response.status) {
           case 400:
-            ElMessage.error("错误请求");
+            ElMessage.error("Bad request");
             //console.log("错误请求")
             break;
           case 401:
-            ElMessage.error("未授权，请重新登录");
+            ElMessage.error("Unauthorized, please log in again");
             setTimeout(() => {
               store.dispatch("user/loginOut");
             }, 1000);
             //console.log("未授权，请重新登录")
             break;
           case 403:
-            ElMessage.error("拒绝访问");
+            ElMessage.error("Access denied");
             //console.log("拒绝访问")
             break;
           case 404:
-            ElMessage.error("请求错误，未找到该资源");
+            ElMessage.error("Request error, the resource was not found");
             //console.log("请求错误，未找到该资源")
             break;
           case 404:
@@ -59,35 +59,35 @@ service.interceptors.response.use(
             //console.log("请求方法为允许")
             break;
           case 408:
-            ElMessage.error("请求超时");
+            ElMessage.error("Timeout!");
             //console.log("请求超时")
             break;
           case 500:
-            ElMessage.error(`服务器端出错 ${response.data.message}`);
+            ElMessage.error(`Server-side error ${response.data.message}`);
             //console.log("服务器端出错")
             break;
           case 501:
-            ElMessage.error("网络未实现");
+            ElMessage.error("Network is not implemented");
             //console.log("网络未实现")
             break;
           case 502:
-            ElMessage.error("网络错误");
+            ElMessage.error("Network Error");
             //console.log("网络错误")
             break;
           case 503:
-            ElMessage.error("服务不可用");
+            ElMessage.error("service is not available");
             //console.log("服务不可用")
             break;
           case 504:
-            ElMessage.error("网络超时");
+            ElMessage.error("Network Timeout!");
             //console.log("网络超时")
             break;
           case 505:
-            ElMessage.error("http版本不支持该请求");
+            ElMessage.error("http version does not support this request");
             //console.log("http版本不支持该请求")
             break;
           default:
-            ElMessage.error(`连接错误${response.status}`);
+            ElMessage.error(`connection error${response.status}`);
           //console.log(`连接错误${err.response.status}`)
         }
       }

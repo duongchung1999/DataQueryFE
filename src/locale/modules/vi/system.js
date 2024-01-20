@@ -1,6 +1,6 @@
 export default {
   system: {
-    title: 'Hệ thống truy vấn dữ liệu',
+    title: 'Data Query System',
     login: 'Đăng nhập',
     userName: 'Tên người dùng',
     password: 'Mật khẩu',
@@ -28,11 +28,11 @@ export default {
       primaryColor: {
         name: 'Màu sắc chủ đề',
         blue: 'Màu xanh mặc định',
-        red: 'Hồng Đỏ',
+        red: 'Đỏ',
         violet: 'Trang chủ',
-        green: 'Truyện Xanh',
-        cyan: 'Minh Thanh',
-        black: 'Đen Geek'
+        green: 'Xanh lá',
+        cyan: 'Xanh lam',
+        black: 'Đen'
       },
       other: {
         name: 'Cài đặt khác',
